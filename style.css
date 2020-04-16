@@ -1,0 +1,18 @@
+body { margin: 0 auto; width: 60%; font-family: Arial, Helvetica, sans-serif; text-align: center; }
+.titulo { margin-top: 60px; }
+.nav-menu ul { margin: 0; padding: 0; list-style: none; background-color: #333; }
+.nav-menu ul li { display: inline; }
+.nav-menu ul li a { padding: 10px 40px; display: inline-block; text-decoration: none; color: #fff; }
+.nav-menu ul li a:hover { background-color: #111; }
+.conteudo { padding: 40px 50px; }
+.itens { margin: 30px; padding: 0; list-style: none; }
+.tabela-usuarios { margin: 0 auto; width: 90%; }
+.icones { height: 20px; cursor: pointer; }
+
+
+
+/*.icon-delete { height: 20px; cursor: pointer; }
+.box-esquerda, .box-direita { display: flex; width: 48%; height: 320px; border: 2px solid #111; }
+.box-esquerda { float: left; }
+.box-direita { float: right; }
+.box-imagem { margin: auto; height: 300px; }*/

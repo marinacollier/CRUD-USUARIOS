@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>DESAFIO - HTML/CSS/JS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">HTML, CSS e JS</h1>
+    <p>Desafio Santander</p>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="exemplo-1.html">CRUD de Usuários</a></li>
+      </ul>
+    </nav>
+    <div class="conteudo">
+      <table class="table-usuarios" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Gênero</th>
+            <th>Profissão</th>
+            <th>Empresa</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tbody-usuarios">
+          <tr id="tr-novo-usuario">
+            <td>
+              <input type="text" name="nome" id="nome" size="30" maxlength="30">
+            </td>
+            <td>
+              <select name="genero" id="genero">
+                <option value="">SELECIONE</option>
+                <option value="F">FEMININO</option>
+                <option value="M">MASCULINO</option>
+                <option value="I">INDEFINIDO</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" name="profissao" id="profissao" size="30" maxlength="30">
+            </td>
+            <td>
+              <input type="text" name="empresa" id="empresa" size="30" maxlength="30">
+            </td>
+            <td>
+              <img src="img/ok.png" alt="" class="icones" onclick="addUsuario()">
+            </td>
+          </tr>
+          <tr>
+            <td>JOÃO SILVA</td>
+            <td>MASCULINO</td>
+            <td>ANALISTA DE SISTEMAS</td>
+            <td>ACCENTURE</td>
+            <td>
+              <img src="img/editar.png" alt="" class="icones" onclick="editUsuario(this)">
+              <img src="img/excluir.png" alt="" class="icones" onclick="exclUsuario(this)">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
